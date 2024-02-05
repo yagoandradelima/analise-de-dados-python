@@ -7,8 +7,10 @@ Created on Mon Feb  5 15:56:32 2024
 import plotly.express as px
 import pandas as pd
 
-df = pd.read_csv('/canada.csv')
+steps = pd.DataFrame([[112,34], [22, 572], [142, 671], [739, 41]], 
+                     index=['seg', 'ter', 'qua', 'qui'],
+                     columns=['A', 'B'])
 
-fig = px.bar(df, x='Country of Citizenship', y='2015')
+fig = px.bar(steps, x='A', y='B')
 
 fig.show()
