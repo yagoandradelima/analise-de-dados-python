@@ -7,7 +7,7 @@ Created on Mon Feb  5 15:56:32 2024
 import plotly.express as px
 import pandas as pd
 
-df = pd.read_csv('canada.csv')
+df = pd.read_csv('/canada.csv')
 
 fig = px.bar(df, x='Country of Citizenship', y='2015')
 
