@@ -9,10 +9,6 @@ import pandas as pd
 
 df = pd.read_csv('canada.csv')
 
-px.line(
-    df,
-    x='Country of Citizenship',
-    y='2015'
-)
+fig = px.bar(df, x='Country of Citizenship', y='2015')
 
-px.show()
+fig.show()
